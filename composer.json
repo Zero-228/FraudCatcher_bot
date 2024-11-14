@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nutgram/nutgram": "^4.29",
+        "symfony/cache": "^7.1"
+    }
+}

@@ -48,7 +48,7 @@ class LanguageMenu extends InlineMenu
         $language = $bot->callbackQuery()->data;
         changeLanguage($bot->userId(), $language);
         $lang = lang($bot->userId());
-        $bot->sendMessage(msg('language_changed', $lang), reply_markup: constructMenuButtons(lang($bot->userId())));
+        $bot->sendMessage(msg('language_changed', $lang));
         $this->end();
     }
 

@@ -65,7 +65,7 @@ $bot->onCommand('help', function(Nutgram $bot) {
     $bot->deleteMessage($bot->userId(),$bot->messageId());
     $role = checkRole($bot->userId());
     createLog(TIME_NOW, $role, $bot->userId(), 'command', '/help');
-    $bot->sendMessage(msg('help_info', lang($bot->userId()));
+    $bot->sendMessage(msg('help_info', lang($bot->userId())));
 });
 
 $bot->onCommand('support', function(Nutgram $bot) {
